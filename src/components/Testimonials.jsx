@@ -8,47 +8,49 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/system';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
+import CakeIcon from '@mui/icons-material/Cake';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
+import ColorLensIcon from '@mui/icons-material/ColorLens';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 const userTestimonials = [
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />,
-    name: 'Remy Sharp',
-    occupation: 'Senior Engineer',
+    avatar: <CakeIcon/>,
+    name: 'Giftune',
     testimonial:
       "I absolutely love how versatile this product is! Whether I'm tackling work projects or indulging in my favorite hobbies, it seamlessly adapts to my changing needs. Its intuitive design has truly enhanced my daily routine, making tasks more efficient and enjoyable.",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />,
-    name: 'Travis Howard',
-    occupation: 'Lead Product Designer',
+    avatar: <SportsEsportsIcon/>,
+    name: 'Tetris',
     testimonial:
       "One of the standout features of this product is the exceptional customer support. In my experience, the team behind this product has been quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
   },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />,
-    name: 'Cindy Baker',
-    occupation: 'CTO',
+    avatar: <FormatColorFillIcon/>,
+    name: 'Contrast Checker',
     testimonial:
       'The level of simplicity and user-friendliness in this product has significantly simplified my life. I appreciate the creators for delivering a solution that not only meets but exceeds user expectations.',
   },
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/4.jpg" />,
-    name: 'Julia Stewart',
-    occupation: 'Senior Engineer',
+    avatar: <ColorLensIcon/>,
+    name: 'Excalidraw',
     testimonial:
       "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/5.jpg" />,
-    name: 'John Smith',
-    occupation: 'Product Designer',
+    avatar: <YouTubeIcon/>,
+    name: 'Youtube Clone',
     testimonial:
       "I've tried other similar products, but this one stands out for its innovative features. It's clear that the makers put a lot of thought into creating a solution that truly addresses user needs.",
   },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/6.jpg" />,
-    name: 'Daniel Wolf',
-    occupation: 'CDO',
+    avatar: <VolunteerActivismIcon/>,
+    name: 'Love Letters',
     testimonial:
       "The quality of this product exceeded my expectations. It's durable, well-designed, and built to last. Definitely worth the investment!",
   },
@@ -74,12 +76,10 @@ const darkLogos = [
 
 const logoStyle = {
   width: '64px',
-  opacity: 0.3,
+  // opacity: 0.3,
 };
 
 export default function Testimonials() {
-  const theme = useTheme();
-  const logos = theme.palette.mode === 'light' ? darkLogos : whiteLogos;
 
   return (
     <Container
@@ -119,13 +119,9 @@ export default function Testimonials() {
                 justifyContent: 'space-between',
                 flexGrow: 1,
                 p: 1,
+                backgroundColor: "black"
               }}
             >
-              <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                  {testimonial.testimonial}
-                </Typography>
-              </CardContent>
               <Box
                 sx={{
                   display: 'flex',
@@ -134,17 +130,24 @@ export default function Testimonials() {
                   pr: 2,
                 }}
               >
-                <CardHeader
+                {/* <CardHeader
                   avatar={testimonial.avatar}
                   title={testimonial.name}
-                  subheader={testimonial.occupation}
-                />
-                <img
-                  src={logos[index]}
-                  alt={`Logo ${index + 1}`}
-                  style={logoStyle}
-                />
+                /> */}
+                <div style={{display: "flex", alignItems: "center"}}> 
+                  <div style={{padding: 12}}>{testimonial.avatar}</div>
+                  <p style={{fontSize: 20}}>{testimonial.name}</p>
+                </div>
+                <div style={{alignContent: "center"}}>
+                  <GitHubIcon style={logoStyle}/>
+                  <LinkIcon style={logoStyle}/>
+                </div>
               </Box>
+              <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                  {testimonial.testimonial}
+                </Typography>
+              </CardContent>
             </Card>
           </Grid>
         ))}
