@@ -218,9 +218,11 @@ export default function getLPTheme(mode) {
           root: ({ theme }) => ({
             border: 'none',
             borderRadius: 8,
+            transition: 'all 0.6s ease',
             '&:hover': { backgroundColor: 'rgba(54, 64, 73, 0.3)' },
             ...(theme.palette.mode === 'dark' && {
               '&:hover': { backgroundColor: 'rgba(54, 64, 73, 0.3)'},
+
             }),
           }),
         },
@@ -347,11 +349,11 @@ export default function getLPTheme(mode) {
       MuiCard: {
         styleOverrides: {
           root: ({ theme, ownerState }) => ({
-            backgroundColor: gray[50],
             borderRadius: 10,
             border: `1px solid ${alpha(gray[200], 0.8)}`,
             boxShadow: 'none',
-            transition: 'background-color, border, 80ms ease',
+            transition: 'all 0.6s ease',
+            '&:hover': { backgroundColor: 'rgba(54, 64, 73, 0.3)' },
             ...(ownerState.variant === 'outlined' && {
               background: `linear-gradient(to bottom, #FFF, rgba(54, 64, 73, 0.3))`,
               '&:hover': {
@@ -463,6 +465,8 @@ export default function getLPTheme(mode) {
       MuiMenuItem: {
         styleOverrides: {
           root: ({ theme }) => ({
+            transition: 'all 0.6s ease',
+            '&:hover': { backgroundColor: 'rgba(54, 64, 73, 0.3)' },
             borderRadius: '99px',
             color: gray[500],
             fontWeight: 500,

@@ -16,7 +16,6 @@ import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-import "./Testimonials.css"
 
 const userTestimonials = [
   {

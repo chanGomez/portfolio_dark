@@ -20,6 +20,7 @@
   touch-action: manipulation;
   width: 100%;
   margin: 12px;
+  margin-top: 2.5rem;
 }
 
 .button-46:active,
