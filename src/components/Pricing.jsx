@@ -199,7 +199,7 @@ export default function Pricing() {
                   variant={tier.buttonVariant}
                   component="a"
                   href="/material-ui/getting-started/templates/checkout/"
-                  target="_blank"
+                  ="_blank"
                 >
                   {tier.buttonText}
                 </Button>

@@ -16,43 +16,56 @@ import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import "./Testimonials.css"
 
 const userTestimonials = [
   {
     avatar: <CakeIcon/>,
     name: 'Giftune',
     testimonial:
-      "I absolutely love how versatile this product is! Whether I'm tackling work projects or indulging in my favorite hobbies, it seamlessly adapts to my changing needs. Its intuitive design has truly enhanced my daily routine, making tasks more efficient and enjoyable.",
+      "Giftune is an app designed to keep you on top of your loved ones upcoming birthdays, where you can effortlessly select the perfect gift. A full stack PERN web application. ",
+    github:"https://github.com/chanGomez/Giftune-Frontend",
+    link:"https://giftune.netlify.app/"
   },
   {
     avatar: <SportsEsportsIcon/>,
     name: 'Tetris',
     testimonial:
-      "One of the standout features of this product is the exceptional customer support. In my experience, the team behind this product has been quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
+      "Tetris web application designed with a retro aesthetic and intuitive gameplay mechanics. The site also offers an interactive environment replicating the classic Windows 98 home screen.",
+      github:"https://github.com/chanGomez/tetris",
+      link:"https://tttetris.netlify.app/"
   },
   {
     avatar: <FormatColorFillIcon/>,
     name: 'Contrast Checker',
     testimonial:
-      'The level of simplicity and user-friendliness in this product has significantly simplified my life. I appreciate the creators for delivering a solution that not only meets but exceeds user expectations.',
+      `In this project I had a desire to gain a deeper understanding of how contrast ratios work. The site inculdes a ratio checker, UX compoents and a mock land page for reference and immediate application.`,
+      github:"https://github.com/chanGomez/kawaii-color-checker",
+      link:"https://cute-color-contrast-checker.netlify.app/"
   },
   {
     avatar: <ColorLensIcon/>,
     name: 'Excalidraw',
     testimonial:
       "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
+      github:"https://github.com/chanGomez/Giftune-Frontend",
+      link:"https://giftune.netlify.app/"
   },
   {
     avatar: <YouTubeIcon/>,
     name: 'Youtube Clone',
     testimonial:
-      "I've tried other similar products, but this one stands out for its innovative features. It's clear that the makers put a lot of thought into creating a solution that truly addresses user needs.",
+      "I've tried to recreat youtube's most important features, the search and video play of it's uploads. Using youtube's own API I learned video and audio play.",
+      github:"https://github.com/daleskiii/youtube_clone_project",
+      link:"https://chantal-daleskii-youtube-clone.netlify.app/"
   },
   {
     avatar: <VolunteerActivismIcon/>,
     name: 'Love Letters',
     testimonial:
-      "The quality of this product exceeded my expectations. It's durable, well-designed, and built to last. Definitely worth the investment!",
+      "I created a fun, sharable and costumizable digital love letter. You are able to download and then share your image anywhere. Inspired by grouptogether's digital cards.",
+      github:"https://github.com/chanGomez/Giftune-Frontend",
+      link:"https://giftune.netlify.app/"
   },
 ];
 
@@ -121,13 +134,14 @@ export default function Testimonials() {
                 p: 1,
                 backgroundColor: "black"
               }}
+              className='testimonials_cards'
             >
               <Box
                 sx={{
                   display: 'flex',
                   flexDirection: 'row',
                   justifyContent: 'space-between',
-                  pr: 2,
+                  pr: 1,
                 }}
               >
                 {/* <CardHeader
@@ -139,8 +153,8 @@ export default function Testimonials() {
                   <p style={{fontSize: 20}}>{testimonial.name}</p>
                 </div>
                 <div style={{alignContent: "center"}}>
-                  <GitHubIcon style={logoStyle}/>
-                  <LinkIcon style={logoStyle}/>
+                <a href={testimonial.link}  target="_blank"><LinkIcon style={logoStyle}/></a>
+                  <a href={testimonial.github}  target="_blank"><GitHubIcon style={logoStyle}/></a>
                 </div>
               </Box>
               <CardContent>

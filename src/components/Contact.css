@@ -1,0 +1,42 @@
+.button-46 {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 15px;
+  max-width: 100px;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  margin: 12px;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: #ffffff;
+  border-color: rgba(195, 190, 190, 0.19);
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 17px;
+    min-width: 100px;
+    padding: 14px 16px;
+  }
+}

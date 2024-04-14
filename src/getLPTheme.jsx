@@ -2,16 +2,16 @@ import { alpha } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 
 export const brand = {
-  50: '#F0F7FF',
-  100: '#CEE5FD',
-  200: '#9CCCFC',
-  300: '#55A6F6',
-  400: '#0A66C2',
-  500: '#0959AA',
-  600: '#064079',
-  700: '#033363',
-  800: '#02294F',
-  900: '#021F3B',
+  50: 'rgba(54, 64, 73, 0.3)',
+  100: 'rgba(54, 64, 73, 0.3)',
+  200: 'rgba(54, 64, 73, 0.3)',
+  300: 'rgba(54, 64, 73, 0.3)',
+  400: 'rgba(54, 64, 73, 0.3)',
+  500: 'rgba(54, 64, 73, 0.3)',
+  600: 'rgba(54, 64, 73, 0.3)',
+  700: 'rgba(54, 64, 73, 0.3)',
+  800: 'rgba(54, 64, 73, 0.3)',
+  900: 'rgba(54, 64, 73, 0.3)',
 };
 
 export const secondary = {
@@ -32,7 +32,7 @@ export const gray = {
   100: '#EAF0F5',
   200: '#D6E2EB',
   300: '#BFCCD9',
-  400: '#bbbcbd',
+  400: '##bbbcbd',
   500: '#5B6B7C',
   600: '#4C5967',
   700: '#364049',
@@ -194,7 +194,7 @@ export default function getLPTheme(mode) {
             overflow: 'clip',
             backgroundColor: '#fff',
             border: '1px solid',
-            borderColor: gray[100],
+            borderColor: 'rgba(54, 64, 73, 0.3)',
             ':before': {
               backgroundColor: 'transparent',
             },
@@ -208,7 +208,7 @@ export default function getLPTheme(mode) {
             },
             ...(theme.palette.mode === 'dark' && {
               backgroundColor: gray[900],
-              borderColor: gray[800],
+              borderColor: 'rgba(54, 64, 73, 0.3)',
             }),
           }),
         },
@@ -218,9 +218,9 @@ export default function getLPTheme(mode) {
           root: ({ theme }) => ({
             border: 'none',
             borderRadius: 8,
-            '&:hover': { backgroundColor: gray[100] },
+            '&:hover': { backgroundColor: 'rgba(54, 64, 73, 0.3)' },
             ...(theme.palette.mode === 'dark' && {
-              '&:hover': { backgroundColor: gray[800] },
+              '&:hover': { backgroundColor: 'rgba(54, 64, 73, 0.3)'},
             }),
           }),
         },
@@ -272,7 +272,7 @@ export default function getLPTheme(mode) {
             boxSizing: 'border-box',
             transition: 'all 100ms ease-in',
             '&:focus-visible': {
-              outline: `3px solid ${alpha(brand[500], 0.5)}`,
+              outline: `3px solid rgba(54, 64, 73, 0.3)`,
               outlineOffset: '2px',
             },
           },
@@ -300,7 +300,7 @@ export default function getLPTheme(mode) {
                 background: brand[500],
                 backgroundImage: `linear-gradient(to bottom, ${brand[400]}, ${brand[600]})`,
                 boxShadow: `inset 0 1px ${alpha(brand[300], 0.4)}`,
-                outline: `1px solid ${brand[700]}`,
+                outline: `1px solid rgba(54, 64, 73, 0.3)`,
                 '&:hover': {
                   background: brand[400],
                   backgroundImage: 'none',
@@ -309,8 +309,8 @@ export default function getLPTheme(mode) {
               }),
             ...(ownerState.variant === 'outlined' && {
               backgroundColor: alpha(brand[300], 0.1),
-              borderColor: brand[300],
-              color: brand[500],
+              borderColor: rgba(54, 64, 73, 0.3),
+              color: rgba(54, 64, 73, 0.3),
               '&:hover': {
                 backgroundColor: alpha(brand[300], 0.3),
                 borderColor: brand[200],
@@ -326,8 +326,8 @@ export default function getLPTheme(mode) {
             ...(theme.palette.mode === 'dark' && {
               ...(ownerState.variant === 'outlined' && {
                 backgroundColor: alpha(brand[600], 0.1),
-                borderColor: brand[700],
-                color: brand[300],
+                borderColor: rgba(54, 64, 73, 0.3),
+                color: rgba(54, 64, 73, 0.3),
                 '&:hover': {
                   backgroundColor: alpha(brand[600], 0.3),
                   borderColor: brand[700],
@@ -353,7 +353,7 @@ export default function getLPTheme(mode) {
             boxShadow: 'none',
             transition: 'background-color, border, 80ms ease',
             ...(ownerState.variant === 'outlined' && {
-              background: `linear-gradient(to bottom, #FFF, ${gray[50]})`,
+              background: `linear-gradient(to bottom, #FFF, rgba(54, 64, 73, 0.3))`,
               '&:hover': {
                 borderColor: brand[300],
                 boxShadow: `0 0 24px ${brand[100]}`,
@@ -394,14 +394,14 @@ export default function getLPTheme(mode) {
               backgroundColor: brand[200],
             },
             '& .MuiChip-label': {
-              color: brand[500],
+              color: 'rgba(54, 64, 73, 0.3)',
             },
             '& .MuiChip-icon': {
               color: brand[500],
             },
             ...(theme.palette.mode === 'dark' && {
               background: `linear-gradient(to bottom right, ${brand[700]}, ${brand[900]})`,
-              borderColor: `${alpha(brand[500], 0.5)}`,
+              borderColor: 'rgba(54, 64, 73, 0.3)',
               '&:hover': {
                 backgroundColor: brand[600],
               },
@@ -410,7 +410,7 @@ export default function getLPTheme(mode) {
                 backgroundColor: brand[600],
               },
               '& .MuiChip-label': {
-                color: brand[200],
+                color: 'rgba(54, 64, 73, 0.3)',
               },
               '& .MuiChip-icon': {
                 color: brand[200],
@@ -493,7 +493,7 @@ export default function getLPTheme(mode) {
             transition: 'background-color 100ms ease-in',
             '&:hover': {
               '& .MuiSwitch-track': {
-                backgroundColor: brand[600],
+                backgroundColor: 'rgba(54, 64, 73, 0.3)',
               },
             },
             '& .MuiSwitch-switchBase': {
@@ -518,7 +518,7 @@ export default function getLPTheme(mode) {
               transition: 'background-color 100ms ease-in',
               '&:hover': {
                 '& .MuiSwitch-track': {
-                  backgroundColor: brand[600],
+                  backgroundColor: 'rgba(54, 64, 73, 0.3)',
                 },
               },
               '& .MuiSwitch-switchBase': {
@@ -550,7 +550,7 @@ export default function getLPTheme(mode) {
         styleOverrides: {
           root: ({ theme }) => ({
             '& label .Mui-focused': {
-              color: 'white',
+              color:'rgba(54, 64, 73, 0.3)'
             },
             '& .MuiInputBase-input': {
               boxSizing: 'border-box',
@@ -560,49 +560,51 @@ export default function getLPTheme(mode) {
             },
             '& .MuiOutlinedInput-root': {
               boxSizing: 'border-box',
-              minWidth: 280,
+              minWidth: 100,
               minHeight: 40,
               height: '100%',
               borderRadius: '10px',
               border: '1px solid',
-              borderColor: gray[200],
+              borderColor: 'rgba(54, 64, 73, 0.3)',
               transition: 'border-color 120ms ease-in',
               '& fieldset': {
                 border: 'none',
-                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
-                background: `${alpha('#FFF', 0.3)}`,
+                // boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+                // background: `${alpha('#FFF', 0.3)}`,
               },
               '&:hover': {
-                borderColor: brand[300],
+                borderColor: 'rgba(54, 64, 73, 0.3)',
               },
               '&.Mui-focused': {
-                borderColor: brand[400],
-                outline: '4px solid',
-                outlineColor: brand[200],
+                color: "white"
+                // borderColor: brand[400],
+                // outline: '4px solid',
+                // outlineColor: brand[200],
               },
             },
             ...(theme.palette.mode === 'dark' && {
               '& .MuiOutlinedInput-root': {
                 boxSizing: 'border-box',
-                minWidth: 280,
+                minWidth: 100,
                 minHeight: 40,
                 height: '100%',
                 borderRadius: '10px',
                 border: '1px solid',
-                borderColor: gray[600],
+                borderColor: 'rgba(54, 64, 73, 0.3)',
                 transition: 'border-color 120ms ease-in',
                 '& fieldset': {
                   border: 'none',
-                  boxShadow: ' 0px 2px 4px rgba(0, 0, 0, 0.4)',
-                  background: `${alpha(gray[800], 0.4)}`,
+                  // boxShadow: ' 0px 2px 4px rgba(0, 0, 0, 0.4)',
+                  // background: `${alpha(gray[800], 0.4)}`,
                 },
                 '&:hover': {
-                  borderColor: brand[300],
+                  borderColor: 'rgba(54, 64, 73, 0.3)',
                 },
                 '&.Mui-focused': {
-                  borderColor: brand[400],
-                  outline: '4px solid',
-                  outlineColor: alpha(brand[500], 0.5),
+                  color: "white"
+                  // borderColor: brand[400],
+                  // outline: '4px solid',
+                  // outlineColor: alpha(brand[500], 0.5),
                 },
               },
             }),

@@ -1,0 +1,8 @@
+.testimonials_cards{
+    transition: all 0.9s ease;
+  }
+
+.testimonials_cards:hover {
+  background-color: rgba(76, 89, 103, 0.3);
+  transform: translateX(5px);
+  }

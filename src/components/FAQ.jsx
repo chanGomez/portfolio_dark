@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-
+import "./FQA.css"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function FAQ() {
@@ -38,35 +38,9 @@ export default function FAQ() {
           textAlign: { sm: 'left', md: 'center' },
         }}
       >
-        Frequently asked questions
+        Need to know more?
       </Typography>
       <Box sx={{ width: '100%' }}>
-        <Accordion
-          expanded={expanded === 'panel1'}
-          onChange={handleChange('panel1')}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1d-content"
-            id="panel1d-header"
-          >
-            <Typography component="h3" variant="subtitle2">
-              How do I contact customer support if I have a question or issue?
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography
-              variant="body2"
-              gutterBottom
-              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
-            >
-              You can reach our customer support team by emailing
-              <Link> support@email.com </Link>
-              or calling our toll-free number. We&apos;re here to assist you
-              promptly.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
         <Accordion
           expanded={expanded === 'panel2'}
           onChange={handleChange('panel2')}
@@ -75,9 +49,10 @@ export default function FAQ() {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2d-content"
             id="panel2d-header"
+            className='accordionSummary'
           >
             <Typography component="h3" variant="subtitle2">
-              Can I return the product if it doesn&apos;t meet my expectations?
+            Is there a software you wish you had built or been apart of?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -86,9 +61,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Absolutely! We offer a hassle-free return policy. If you&apos;re not
-              completely satisfied, you can return the product within [number of
-              days] days for a full refund or exchange.
+              As a designer and coder, I would have loved to been apart of Adobe, Procreate, or Photoshop. Any platform designed to help others create. 
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -100,9 +73,10 @@ export default function FAQ() {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel3d-content"
             id="panel3d-header"
+            className='accordionSummary'
           >
             <Typography component="h3" variant="subtitle2">
-              What makes your product stand out from others in the market?
+              What are your hobbies?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -111,9 +85,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Our product distinguishes itself through its adaptability, durability,
-              and innovative features. We prioritize user satisfaction and
-              continually strive to exceed expectations in every aspect.
+              As of recently I have taken up sewing and basketball. 
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -125,9 +97,11 @@ export default function FAQ() {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel4d-content"
             id="panel4d-header"
+            className='accordionSummary'
           >
             <Typography component="h3" variant="subtitle2">
-              Is there a warranty on the product, and what does it cover?
+              What are your top three desert Island movies?
+              
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -136,10 +110,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Yes, our product comes with a [length of warranty] warranty. It covers
-              defects in materials and workmanship. If you encounter any issues
-              covered by the warranty, please contact our customer support for
-              assistance.
+              The only movies I would take with me are Fight Club, Blade Runner and The Place Beyond the Pines.
             </Typography>
           </AccordionDetails>
         </Accordion>

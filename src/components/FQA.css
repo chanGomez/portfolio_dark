@@ -1,0 +1,19 @@
+.accordionSummary{
+  transition: all 0.1 ease;
+  }
+
+.accordionSummary:hover {
+    background-color: rgba(76, 89, 103, 0.3);
+    transform: translateX(5px);
+  }
+
+.menuItem{
+  transition: all 0.9s ease;
+  }
+
+.menuItem:hover {
+    background-color: rgba(76, 89, 103, 0.3);
+  }
+
+  
+

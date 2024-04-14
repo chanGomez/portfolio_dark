@@ -12,6 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
+import "./FQA.css"
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
@@ -80,42 +81,47 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
-                  onClick={() => scrollToSection('features')}
+                  onClick={() => scrollToSection('hero')}
                   sx={{ py: '6px', px: '20px' }}
+                  className='menuItem'
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="subtitle1" color="text.primary">
                     Home
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
-                  sx={{ py: '6px', px: '20px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    About
                   </Typography>
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('highlights')}
                   sx={{ py: '6px', px: '20px' }}
+                  className='menuItem'
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="subtitle1" color="text.primary">
+                    About
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => scrollToSection('testimonials')}
+                  className='menuItem'
+                  sx={{ py: '6px', px: '20px' }}
+                >
+                  <Typography variant="subtitle1" color="text.primary">
                     Projects
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('pricing')}
+                  onClick={() => scrollToSection('contact')}
+                  className='menuItem'
                   sx={{ py: '6px', px: '20px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="subtitle1" color="text.primary">
                     Contact
                   </Typography>
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('faq')}
+                  className='menuItem'
                   sx={{ py: '6px', px: '20px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="subtitle1" color="text.primary">
                     FAQ
                   </Typography>
                 </MenuItem>
@@ -159,16 +165,16 @@ function AppAppBar({ mode, toggleColorMode }) {
                   >
                     {/* <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} /> */}
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
+                  <MenuItem onClick={() => scrollToSection('hero')}>
                     Home
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                  <MenuItem onClick={() => scrollToSection('highlights')}>
                     About
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                  <MenuItem onClick={() => scrollToSection('testimonials')}>
                     Projects
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
+                  <MenuItem onClick={() => scrollToSection('contact')}>
                     Contact
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>

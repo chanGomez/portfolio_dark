@@ -20,7 +20,7 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
 
-function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
+function ToggleCustomTheme() {
   return (
     <Box
       sx={{
@@ -84,20 +84,13 @@ export default function LandingPage() {
       <Divider />
       <Box sx={{ bgcolor: 'background.default' }}>
       <Highlights />
-        {/* <LogoCollection /> */}
-        {/* <Features /> */}
         <Divider />
         <Testimonials />
-        <Divider />
-        {/* <Highlights /> */}
-        <Divider />
-        {/* <Pricing /> */}
         <Divider />
         <FAQ />
         <Divider />
         <Contact/>
         <Divider />
-
         <Footer />
       </Box>
       <ToggleCustomTheme

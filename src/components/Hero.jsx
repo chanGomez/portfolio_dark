@@ -60,35 +60,36 @@ export default function Hero() {
               products
             </Typography>
           </Typography> */}
-                  <Box
+        <Box
           // id="image"
           sx={{
-            mt: { xs: 8, sm: 10 },
+            mt: { xs: 10, sm: 20 },
             alignSelf: 'center',
             // backgroundImage:`url(/src/assets/images/CHANTALGOMEZ.png);`
           }}>
-                <img
+          <img
         src={heroImage}
         style={{ width: '100%', filter: "invert()"}}
       />
         </Box>
+        <Box style={{display: 'flex', gap:15}}>
+        <Typography
+            textAlign="right"
+            color="white"
+            variant="h5"
+            sx={{  mt: 1.5, alignSelf: 'center', width: { sm: '100%', md: '80%' }, fontWeight: 200}}
+          >
+            A fullstack Web Developer
+          </Typography>
           <Typography
-            textAlign="center"
+            textAlign="left"
             color="white"
             variant="h4"
-            sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
+            sx={{  width: { sm: '100%', md: '80%' }, fontWeight: 500 }}
           >
-            A fullstack Web Developer.
+            CREATOR
           </Typography>
-
-          <Typography
-            textAlign="center"
-            color="white"
-            variant="h6"
-            sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
-          >
-            I love to create.
-          </Typography>
+        </Box>
           {/* <Stack
             direction={{ xs: 'column', sm: 'row' }}
             alignSelf="center"

@@ -44,7 +44,8 @@ export default function Highlights() {
             About Me
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.400' }}>
-          <p>I am here today because of the “how hard could it be” mentality. It helped immensely when I was a graphic designer. I did logo work, branding, videography, and in various different design styles. My passion was rooted in the process of bringing ideas to life, infusing them with meaning and aesthetics.</p>
+          <p>In my journey to becoming the best designer I could be
+          while freelancing, creating logos and social media advertisement, I came across the intersection between design and technology. I was facinated by how design can influence behavior, shape user experiences, and improve functionality in websites with my knowledge in design principles and color theory. That led me to pursue a career in web development.</p>
           <p>When I first came across my coding journey I immediately saw a blank canvas that I could solely fill with algorithms and programming languages. My new journey gave me an opportunity to really take on a challenge. Since then my passion is now artistic expression with technical innovation. I can't wait to see what I'll be creating next.</p>
           </Typography>
         </Box>
