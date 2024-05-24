@@ -19,52 +19,51 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 const userTestimonials = [
   {
-    avatar: <CakeIcon/>,
-    name: 'Giftune',
+    avatar: <CakeIcon />,
+    name: "Giftune",
     testimonial:
       "Giftune is an app designed to keep you on top of your loved ones upcoming birthdays, where you can effortlessly select the perfect gift. A full stack PERN web application. ",
-    github:"https://github.com/chanGomez/Giftune-Frontend",
-    link:"https://giftune.netlify.app/"
+    github: "https://github.com/chanGomez/Giftune-Frontend",
+    link: "https://giftune-chantal.netlify.app/",
   },
   {
-    avatar: <SportsEsportsIcon/>,
-    name: 'Tetris',
+    avatar: <SportsEsportsIcon />,
+    name: "Tetris",
     testimonial:
       "Tetris web application designed with a retro aesthetic and intuitive gameplay mechanics. The site also offers an interactive environment replicating the classic Windows 98 home screen.",
-      github:"https://github.com/chanGomez/tetris",
-      link:"https://tttetris.netlify.app/"
+    github: "https://github.com/chanGomez/tetris",
+    link: "https://tttetris.netlify.app/",
   },
   {
-    avatar: <FormatColorFillIcon/>,
-    name: 'Contrast Checker',
-    testimonial:
-      `In this project I had a desire to gain a deeper understanding of how contrast ratios work. The site inculdes a ratio checker, UX compoents and a mock land page for reference and immediate application.`,
-      github:"https://github.com/chanGomez/kawaii-color-checker",
-      link:"https://cute-color-contrast-checker.netlify.app/"
+    avatar: <FormatColorFillIcon />,
+    name: "Contrast Checker",
+    testimonial: `In this project I had a desire to gain a deeper understanding of how contrast ratios work. The site inculdes a ratio checker, UX compoents and a mock land page for reference and immediate application.`,
+    github: "https://github.com/chanGomez/kawaii-color-checker",
+    link: "https://cute-color-contrast-checker.netlify.app/",
   },
   {
-    avatar: <ColorLensIcon/>,
-    name: 'Excalidraw',
+    avatar: <ColorLensIcon />,
+    name: "Excalidraw",
     testimonial:
       "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
-      github:"https://github.com/chanGomez/Giftune-Frontend",
-      link:"https://giftune.netlify.app/"
+    github: "https://github.com/chanGomez/Giftune-Frontend",
+    link: "https://giftune.netlify.app/",
   },
   {
-    avatar: <YouTubeIcon/>,
-    name: 'Youtube Clone',
+    avatar: <YouTubeIcon />,
+    name: "Youtube Clone",
     testimonial:
       "I've tried to recreat youtube's most important features, the search and video play of it's uploads. Using youtube's own API I learned video and audio play.",
-      github:"https://github.com/daleskiii/youtube_clone_project",
-      link:"https://chantal-daleskii-youtube-clone.netlify.app/"
+    github: "https://github.com/daleskiii/youtube_clone_project",
+    link: "https://chantal-daleskii-youtube-clone.netlify.app/",
   },
   {
-    avatar: <VolunteerActivismIcon/>,
-    name: 'Love Letters',
+    avatar: <VolunteerActivismIcon />,
+    name: "Love Letters",
     testimonial:
       "I created a fun, sharable and costumizable digital love letter. You are able to download and then share your image anywhere. Inspired by grouptogether's digital cards.",
-      github:"https://github.com/chanGomez/Giftune-Frontend",
-      link:"https://giftune.netlify.app/"
+    github: "https://github.com/chanGomez/Giftune-Frontend",
+    link: "https://giftune.netlify.app/",
   },
 ];
 
