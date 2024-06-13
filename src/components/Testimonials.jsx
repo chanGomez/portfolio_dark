@@ -23,7 +23,7 @@ const userTestimonials = [
     name: "Giftune",
     testimonial:
       "Giftune is an app designed to keep you on top of your loved ones upcoming birthdays, where you can effortlessly select the perfect gift. A full stack PERN web application. ",
-    github: "https://github.com/chanGomez/Giftune-Frontend",
+    github: "https://github.com/chanGomez/Frontend-Giftune",
     link: "https://giftune-chantal.netlify.app/",
   },
   {
