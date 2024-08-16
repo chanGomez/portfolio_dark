@@ -16,6 +16,8 @@ import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import HighlightAltIcon from "@mui/icons-material/HighlightAlt";
+import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
 
 const userTestimonials = [
   {
@@ -42,28 +44,28 @@ const userTestimonials = [
     link: "https://cute-color-contrast-checker.netlify.app/",
   },
   {
-    avatar: <ColorLensIcon />,
-    name: "Excalidraw",
+    avatar: <HighlightAltIcon />,
+    name: "reCalibrate",
     testimonial:
-      "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
-    github: "https://github.com/chanGomez/Giftune-Frontend",
-    link: "https://giftune.netlify.app/",
+      "ReCalibrate is a npm package that enables real-time CSS changes, allowing you to adjust the width and height of components using a drag-and-drop feature.",
+    github: "https://github.com/chanGomez/reCalibrate_npm",
+    link: "https://www.npmjs.com/package/recalibrate?activeTab=readme",
   },
   {
     avatar: <YouTubeIcon />,
     name: "Youtube Clone",
     testimonial:
-      "I've tried to recreat youtube's most important features, the search and video play of it's uploads. Using youtube's own API I learned video and audio play.",
+      "I've tried to recreate youtube's most important features, the search and video play of it's uploads. Using youtube's own API I learned video and audio play.",
     github: "https://github.com/daleskiii/youtube_clone_project",
     link: "https://chantal-daleskii-youtube-clone.netlify.app/",
   },
   {
-    avatar: <VolunteerActivismIcon />,
-    name: "Love Letters",
+    avatar: <PsychologyAltIcon />,
+    name: "Captrivia",
     testimonial:
-      "I created a fun, sharable and costumizable digital love letter. You are able to download and then share your image anywhere. Inspired by grouptogether's digital cards.",
-    github: "https://github.com/chanGomez/Giftune-Frontend",
-    link: "https://giftune.netlify.app/",
+      "This is a real-time multiplayer trivia game. I one week I was able to learned about WebSockets and implemented them to enable real-time interactions and game updates.",
+    post: "https://www.linkedin.com/posts/chantal-gomez-marte_thrilled-to-showcase-my-latest-project-activity-7230243341181878274-42zu?utm_source=share&utm_medium=member_desktop",
+    link: "https://www.linkedin.com/posts/chantal-gomez-marte_thrilled-to-showcase-my-latest-project-activity-7230243341181878274-42zu?utm_source=share&utm_medium=member_desktop",
   },
 ];
 
