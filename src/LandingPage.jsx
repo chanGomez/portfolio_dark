@@ -13,7 +13,7 @@ import Hero from './components/Hero';
 import LogoCollection from './components/LogoCollection';
 import Highlights from './components/Highlights';
 import Contact from './components/Contact';
-// import Pricing from './components/Pricing';
+import Pricing from './components/Pricing';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -82,21 +82,19 @@ export default function LandingPage() {
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <Hero />
       <Divider />
-      <Box sx={{ bgcolor: 'background.default' }}>
-      <Highlights />
+      <Box sx={{ bgcolor: "background.default" }}>
+        <Highlights />
         <Divider />
         <Testimonials />
         <Divider />
+        <Pricing/>
+        <Divider />
         <FAQ />
         <Divider />
-        <Contact/>
+        <Contact />
         <Divider />
         <Footer />
       </Box>
-      <ToggleCustomTheme
-        showCustomTheme={showCustomTheme}
-        toggleCustomTheme={toggleCustomTheme}
-      />
     </ThemeProvider>
   );
 }

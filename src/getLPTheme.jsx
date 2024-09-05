@@ -311,8 +311,8 @@ export default function getLPTheme(mode) {
               }),
             ...(ownerState.variant === 'outlined' && {
               backgroundColor: alpha(brand[300], 0.1),
-              borderColor: rgba(54, 64, 73, 0.3),
-              color: rgba(54, 64, 73, 0.3),
+              borderColor: 'rgba(54, 64, 73, 0.3)',
+              color: 'rgba(54, 64, 73, 0.3)',
               '&:hover': {
                 backgroundColor: alpha(brand[300], 0.3),
                 borderColor: brand[200],
@@ -328,8 +328,8 @@ export default function getLPTheme(mode) {
             ...(theme.palette.mode === 'dark' && {
               ...(ownerState.variant === 'outlined' && {
                 backgroundColor: alpha(brand[600], 0.1),
-                borderColor: rgba(54, 64, 73, 0.3),
-                color: rgba(54, 64, 73, 0.3),
+                borderColor: 'rgba(54, 64, 73, 0.3)',
+                color: 'rgba(54, 64, 73, 0.3)',
                 '&:hover': {
                   backgroundColor: alpha(brand[600], 0.3),
                   borderColor: brand[700],
