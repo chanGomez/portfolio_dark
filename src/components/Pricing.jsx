@@ -139,12 +139,18 @@ const style = {
   boxShadow: 24,
   m: 4,
   mb: 4,
+  backdropFilter: "blur(10px)",
+};
+const style2 = {
+  height: "100vh",
+  backdropFilter: "blur(50px)",
 };
 
   console.log(num);
 
   return (
     <Container
+      id="pricing"
       maxWidth="lg"
       component="main"
       sx={{ display: "flex", flexDirection: "column", my: 16, gap: 4 }}
@@ -155,21 +161,23 @@ const style = {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box >
-          <Box
-            sx={style}
-            component="img"
-            src={cardData[num]?.img}
-          />
+        <Box sx={style2} onClick={handleClose}>
+          <Box sx={style} component="img" src={cardData[num]?.img} />
         </Box>
       </Modal>
 
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
+      <Box
+        sx={{
+          gap: 4,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <div>
           <Typography variant="h3" gutterBottom>
             Designs
           </Typography>
-          <Typography>My obsession before coding.</Typography>
         </div>
         <Grid container spacing={2} columns={12}>
           <Grid xs={12} md={6}>

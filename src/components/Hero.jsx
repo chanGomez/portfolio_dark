@@ -79,7 +79,7 @@ export default function Hero() {
             variant="h5"
             sx={{  mt: 1.5, alignSelf: 'center', width: { sm: '100%', md: '80%' }, fontWeight: 200}}
           >
-            A fullstack Web Developer
+            A Fullstack Web Developer
           </Typography>
           <Typography
             textAlign="left"

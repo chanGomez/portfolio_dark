@@ -41,28 +41,28 @@ function AppAppBar({ mode, toggleColorMode }) {
         position="fixed"
         sx={{
           boxShadow: 0,
-          bgcolor: 'transparent',
-          backgroundImage: 'none',
+          bgcolor: "transparent",
+          backgroundImage: "none",
           mt: 2,
         }}
       >
-        <Container maxWidth="sm">
+        <Container maxWidth="650px" sx={{ maxWidth: 650 }}>
           <Toolbar
             variant="regular"
             sx={(theme) => ({
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
               flexShrink: 0,
-              borderRadius: '999px',
+              borderRadius: "999px",
               bgcolor:
-                theme.palette.mode === 'light'
-                  ? 'rgba(255, 255, 255, 0.4)'
-                  : 'rgba(0, 0, 0, 0.4)',
-              backdropFilter: 'blur(24px)',
+                theme.palette.mode === "light"
+                  ? "rgba(255, 255, 255, 0.4)"
+                  : "rgba(0, 0, 0, 0.4)",
+              backdropFilter: "blur(24px)",
               maxHeight: 40,
-              border: '1px solid',
-              borderColor: 'divider',
+              border: "1px solid",
+              borderColor: "divider",
               // boxShadow:
               //   theme === 'light'
               //     ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
@@ -73,53 +73,62 @@ function AppAppBar({ mode, toggleColorMode }) {
               sx={{
                 justifyContent: "center",
                 flexGrow: 1,
-                display: 'flex',
-                alignItems: 'center',
-                ml: '-8px',
-                px: 0,
+                display: "flex",
+                alignItems: "center",
+                ml: "-8px",
+                p: 0,
               }}
             >
-              <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+              <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 <MenuItem
-                  onClick={() => scrollToSection('hero')}
-                  sx={{ py: '6px', px: '20px' }}
-                  className='menuItem'
+                  onClick={() => scrollToSection("hero")}
+                  sx={{ py: "6px", px: "20px" }}
+                  className="menuItem"
                 >
                   <Typography variant="subtitle1" color="text.primary">
                     Home
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('highlights')}
-                  sx={{ py: '6px', px: '20px' }}
-                  className='menuItem'
+                  onClick={() => scrollToSection("highlights")}
+                  sx={{ py: "6px", px: "20px" }}
+                  className="menuItem"
                 >
                   <Typography variant="subtitle1" color="text.primary">
                     About
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
-                  className='menuItem'
-                  sx={{ py: '6px', px: '20px' }}
+                  onClick={() => scrollToSection("testimonials")}
+                  className="menuItem"
+                  sx={{ py: "6px", px: "20px" }}
                 >
                   <Typography variant="subtitle1" color="text.primary">
                     Projects
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('contact')}
-                  className='menuItem'
-                  sx={{ py: '6px', px: '20px' }}
+                  onClick={() => scrollToSection("pricing")}
+                  className="menuItem"
+                  sx={{ py: "6px", px: "20px" }}
+                >
+                  <Typography variant="subtitle1" color="text.primary">
+                    Gallery
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => scrollToSection("contact")}
+                  className="menuItem"
+                  sx={{ py: "6px", px: "20px" }}
                 >
                   <Typography variant="subtitle1" color="text.primary">
                     Contact
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('faq')}
-                  className='menuItem'
-                  sx={{ py: '6px', px: '20px' }}
+                  onClick={() => scrollToSection("faq")}
+                  className="menuItem"
+                  sx={{ py: "6px", px: "20px" }}
                 >
                   <Typography variant="subtitle1" color="text.primary">
                     FAQ
@@ -129,55 +138,60 @@ function AppAppBar({ mode, toggleColorMode }) {
             </Box>
             <Box
               sx={{
-                display: { xs: 'none', md: 'flex' },
+                display: { xs: "none", md: "flex" },
                 gap: 0.5,
-                alignItems: 'center',
+                alignItems: "center",
               }}
             >
               {/* <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} /> */}
             </Box>
-            <Box sx={{ display: { sm: '', md: 'none' } }}>
+            <Box sx={{ display: { sm: "", md: "none" } }}>
               <Button
                 variant="text"
                 color="primary"
                 aria-label="menu"
                 onClick={toggleDrawer(true)}
-                sx={{ minWidth: '30px', p: '4px' }}
+                sx={{ minWidth: "30px", p: "4px" }}
               >
                 <MenuIcon />
               </Button>
               <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
                 <Box
                   sx={{
-                    minWidth: '60dvw',
+                    minWidth: "60dvw",
                     p: 2,
-                    backgroundColor: 'background.paper',
+                    backgroundColor: "background.paper",
                     flexGrow: 1,
                   }}
                 >
                   <Box
                     sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'end',
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "end",
                       flexGrow: 1,
                     }}
                   >
                     {/* <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} /> */}
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('hero')}>
+                  <MenuItem onClick={() => scrollToSection("hero")}>
                     Home
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                  <MenuItem onClick={() => scrollToSection("highlights")}>
                     About
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                  <MenuItem onClick={() => scrollToSection("testimonials")}>
                     Projects
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('contact')}>
+                  <MenuItem onClick={() => scrollToSection("pricing")}>
+                    Gallery
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection("contact")}>
                     Contact
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
+                  <MenuItem onClick={() => scrollToSection("faq")}>
+                    FAQ
+                  </MenuItem>
                 </Box>
               </Drawer>
             </Box>
