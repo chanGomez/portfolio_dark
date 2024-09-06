@@ -64,7 +64,7 @@ const userTestimonials = [
     name: "Captrivia",
     testimonial:
       "This is a real-time multiplayer trivia game. I one week I was able to learned about WebSockets and implemented them to enable real-time interactions and game updates.",
-    post: "https://www.linkedin.com/posts/chantal-gomez-marte_thrilled-to-showcase-my-latest-project-activity-7230243341181878274-42zu?utm_source=share&utm_medium=member_desktop",
+    github: "https://github.com/chanGomez/multiplayer-trivia",
     link: "https://www.linkedin.com/posts/chantal-gomez-marte_thrilled-to-showcase-my-latest-project-activity-7230243341181878274-42zu?utm_source=share&utm_medium=member_desktop",
   },
 ];
