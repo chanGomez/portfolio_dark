@@ -21,32 +21,45 @@ export default function Highlights() {
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
-        color: 'white',
-        bgcolor: 'black',
+        color: "white",
+        bgcolor: "black",
       }}
     >
       <Container
         sx={{
-          position: 'relative',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+          position: "relative",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
           gap: { xs: 3, sm: 6 },
         }}
       >
         <Box
           sx={{
-            width: { sm: '100%', md: '60%' },
-            textAlign: { sm: 'left', md: 'center' },
+            width: { sm: "100%", md: "60%" },
+            textAlign: { sm: "left", md: "center" },
           }}
         >
           <Typography component="h2" variant="h4">
             About Me
           </Typography>
-          <Typography variant="body1" sx={{ color: 'grey.400' }}>
-          <p>In my journey to becoming the best designer I could be
-          while freelancing, creating logos and social media advertisement, I came across the intersection between design and technology. I was facinated by how design can influence behavior, shape user experiences, and improve functionality in websites with my knowledge in design principles and color theory. That led me to pursue a career in web development.</p>
-          <p>When I first came across coding, I immediately saw a blank canvas that I could fill with algorithms and programming languages. My new journey gave me an opportunity to really take on a challenge. Now my passion is now artistic expression with technical innovation. I can't wait to see what I'll be creating next.</p>
+          <Typography variant="body1" sx={{ color: "grey.400" }}>
+            <p>
+              In my journey to becoming the best designer I could be while
+              freelancing, creating logos, and designing social media
+              advertisements, I discovered the intersection between design and
+              technology. I was fascinated by how design can influence behavior,
+              shape user experiences, and improve website functionality through
+              my knowledge of design principles and color theory. This
+              realization led me to pursue a career in web development.
+            </p>
+            <p>
+              When I first encountered coding, I immediately saw it as a blank
+              canvas, one I could fill with algorithms and programming
+              languages. This new path presented an exciting challenge, merging
+              artistic expression with technical innovation. I can't wait to see
+              what I'll create next.
+            </p>
           </Typography>
         </Box>
       </Container>

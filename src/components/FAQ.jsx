@@ -61,9 +61,12 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
-              As a designer and coder, I would have loved to been apart of
-              Figma, Adobe, Procreate, or Photoshop. Any platform designed to
-              help others create.
+              As a designer and coder, I've always dreamed of joining teams like
+              Figma, Adobe, Procreate, or Photoshop—platforms that empower
+              creativity and help users bring their visions to life. The thought
+              of contributing to tools that shape the creative industry and
+              inspire artists, designers, and creators worldwide is incredibly
+              exciting to me.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -113,9 +116,9 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
-              The only movies I would take with me are Blade Runner 2049, Fight
-              Club, and Edward Scissorhands. AND if I had to choose two more it would be Interstella and The Place 
-              Beyond the Pines. Honestly any Ryan Gosling movie. I love movies.
+              The movies I would take with me are Blade Runner 2049, Fight Club,
+              and Edward Scissorhands. And if I had to choose two more it would
+              be Interstella and The Place Beyond the Pines.
             </Typography>
           </AccordionDetails>
         </Accordion>
