@@ -18,6 +18,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import HighlightAltIcon from "@mui/icons-material/HighlightAlt";
 import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
+import LockPersonIcon from "@mui/icons-material/LockPerson";
 
 const userTestimonials = [
   {
@@ -52,12 +53,12 @@ const userTestimonials = [
     link: "https://www.npmjs.com/package/recalibrate?activeTab=readme",
   },
   {
-    avatar: <YouTubeIcon />,
-    name: "Youtube Clone",
+    avatar: <LockPersonIcon />,
+    name: "Authenticator",
     testimonial:
-      "I've tried to recreate youtube's most important features, the search and video play of it's uploads. Using youtube's own API I learned video and audio play.",
-    github: "https://github.com/daleskiii/youtube_clone_project",
-    link: "https://chantal-daleskii-youtube-clone.netlify.app/",
+      "A full-stack authentication and security project featuring user authentication with JWT, session management with Redis, secure password reset functionality, and multi-factor auth with time-based one time password verification.",
+    github: "https://github.com/chanGomez/RC-Authentication-FE",
+    link: "https://authenticatorrrr.netlify.app/",
   },
   {
     avatar: <PsychologyAltIcon />,
